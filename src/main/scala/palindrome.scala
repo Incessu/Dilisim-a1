@@ -1,11 +1,10 @@
 object palindrome extends App{
   def palindrome(s : String) : Boolean = {
-    val sLetters = s.toLowerCase.filter(c => c.isLetter)
-    (sLetters == sLetters.reverse)
+    val words = s.toLowerCase.filter(x => x.isLetter)
+    (words == words.reverse)
   }
 
-
-  println("enter a line of text")
+  println("enter your text")
   val input = readLine()
 
   if (palindrome(input))
